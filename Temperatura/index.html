@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<section id="box">
+    <h1>Conversor de temperatura</h1>
+    <section id="form">
+        <label for="valortemp">Temperatura:</label>
+        <div>
+            <input type="number" name="valortemp" id="number" value="255" onchange="converterTexto()">
+            <select name="unidade" id="unidade" onchange="converterTexto()">
+                <option value="celsius">°C</option>
+                <option value="fahrenheit">°F</option>
+                <option value="kelvin" selected>K</option>
+            </select>
+        </div>
+
+        <h1 id="tagrange">Escala em kelvin:</h1>
+        <div>
+            <input type="number" id="kmin" value="0" onchange="escalaTempRangeK()">
+            <h1> K</h1>
+            <input type="range" id="range" onchange="converterRange()" max="510">
+            <input type="number" id="kmax" value="510" onchange="escalaTempRangeK()">
+            <h1> K</h1>
+        </div>
+    </section>
+
+    <table>
+        <thead>
+            <th>°C</th>
+            <th>°F</th>
+            <th>K</th>
+        </thead>
+        <tr>
+            <td>-18.00 °C</td>
+            <td>-0.40 °F</td>
+            <td>255.00 K</td>
+        </tr>
+    </table>
+    <section id="cores">
+        <label for="rgb">rgb:</label>
+        <textarea name="rgb" id="rgb" cols="10" rows="1" readonly>41,239,120</textarea>
+    </section>
+    <section id="cores">
+        <label for="hexa">hexadecimal:</label>
+        <textarea name="hexa" id="hexa" cols="10" rows="1" readonly>#29ef78</textarea>
+    </section>
+</section>
+    
+    <script src="index.js"></script>
+</body>
+</html>

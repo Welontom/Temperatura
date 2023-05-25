@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1,label,button,#kmax,#kmin{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(41,239,120);
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+    width: 400px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
+#number,select{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#range{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 10px;
+}
+div{
+    display: flex;
+    width: 100%;
+}
+div h1{
+    font-size: medium;
+}
+#tagrange{
+    font-size: medium;
+    margin-bottom: 10px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none;
+}
+#kmax,#kmin{
+    width: 30px;
+    text-align: center;
+    margin-right: 2px;
+    border-radius: 5px;
+    border: solid 1px black;
+
+}
+button{
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+}
+table,th,td{
+    border: 2px black solid;
+    border-collapse: collapse;
+}
+th{
+    width: 100px;
+    height: 25px;
+    background-color: lightgrey;
+}
+td{
+    background-color: white;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+}
+#cores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+textarea{
+    margin-left: 10px;
+    resize: none;
+    text-align: center;
+    border-radius: 20px;
+    border: solid black 1px;
+}
+select{
+    margin-left: 20px;
+}
